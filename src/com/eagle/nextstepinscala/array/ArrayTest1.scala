@@ -1,4 +1,4 @@
-package com.eagle.nextstepinscala
+package com.eagle.nextstepinscala.array
 
 object ArrayTest1 {
 

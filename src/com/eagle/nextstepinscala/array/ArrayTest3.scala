@@ -1,4 +1,4 @@
-package com.eagle.nextstepinscala
+package com.eagle.nextstepinscala.array
 
 /**
   * 一次性给数组赋值：
