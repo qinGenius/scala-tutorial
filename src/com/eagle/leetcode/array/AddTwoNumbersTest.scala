@@ -22,12 +22,12 @@ object AddTwoNumbersTest {
   def addTwoNumbers(one:List[Int],other:List[Int]):List[Char]={
     //以逆序把List转String
     def listToString(list:List[Int]):String={
-      var sb=new StringBuilder;
+      var sb=new StringBuilder
       list.reverse.foreach(item => sb.append(item))
       sb.toString()
     }
     val result:Int=listToString(one).toInt+listToString(other).toInt
-   return result.toString.toList.reverse
+    result.toString.toList.reverse
   }
   def main(args: Array[String]): Unit = {
     addTwoNumbers(List(2,4,3),List(5,6,4)).foreach(println)

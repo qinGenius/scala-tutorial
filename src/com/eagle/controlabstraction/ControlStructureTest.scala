@@ -8,7 +8,7 @@ object ControlStructureTest {
 
   //数学中的四种运算：加 减 乘 除
   //注意(Double, Double) => Double 【=> 符号左边有多个类型时必须要有小括号（）】
-  def calculate(op: (Double, Double) => Double, x: Double, y: Double) = op(x, y)
+  def calculate(f: (Double, Double) => Double, x: Double, y: Double) = f(x, y)
 
   def main(args: Array[String]): Unit = {
     val result = twice(_ + 5, 1) //11
