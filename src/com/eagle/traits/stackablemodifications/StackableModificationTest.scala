@@ -37,6 +37,18 @@ object StackableModificationTest {
       println(queueWithTraits2.get())
     }
 
+
+    println("_____________________________________________")
+    //计算stackable modifications 的trait的优先级是从右边到左边
+    val queueWithTraits3 = new BasicIntQueue  with Doubling with Incrementing
+    queueWithTraits3.put(1)//(1+1) *2
+    queueWithTraits3.put(2)//(2+1) *2
+    queueWithTraits3.put(3)//(3+1) *2
+    for(i <- 0 to 2){
+      println(queueWithTraits3.get())
+    }
+
+
   }
 
 }
