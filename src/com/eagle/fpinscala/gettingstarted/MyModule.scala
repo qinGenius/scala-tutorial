@@ -44,7 +44,7 @@ object MyModule {
     val result = formatAbs(-9)
 
     println(result)
-
+    //从这里可以看出函数名是函数的引用
     val result2=formatResult("absolute value",-10,abs)
     println(result2)
   }
