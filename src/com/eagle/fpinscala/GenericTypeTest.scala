@@ -16,6 +16,11 @@ package com.eagle.fpinscala
   * 逆变
   * 如果A 是B的子类，那么C[A]是C[B]的父类则称为逆变    逆变用-号表示
   *
+  *
+  * C[+T]：如果A是B的子类，那么C[A]是C[B]的子类。
+  * C[-T]：如果A是B的子类，那么C[B]是C[A]的子类。
+  * C[T]：无论A和B是什么关系，C[A]和C[B]没有从属关系。
+  *
   */
 object GenericTypeTest {
   def order[T <: Comparable[T]] (one: T,other:T): Int ={
